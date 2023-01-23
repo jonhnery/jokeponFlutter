@@ -117,38 +117,51 @@ class _JogoState extends State<Jogo> {
                 ),
               ],
             ),
-            Padding(padding: EdgeInsets.only(top: 32,),
-              child: Text(
-                "Vitória: " + _vitoria.toString(),
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(padding: EdgeInsets.only(top: 32,),
+                  child: Text(
+                    "Vitória: " + _vitoria.toString(),
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(top: 32,),
-              child: Text(
-                "Derrota: " + _derrota.toString(),
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                Padding(padding: EdgeInsets.only(top: 32,),
+                  child: Text(
+                    "Derrota: " + _derrota.toString(),
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(top: 32,),
-              child: Text(
-                "Empate: " + _empate.toString(),
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                Padding(padding: EdgeInsets.only(top: 32,),
+                  child: Text(
+                    "Empate: " + _empate.toString(),
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
-            ),
+                ],
+            )
+
          ],
         ),
+      ),
+      bottomNavigationBar: Text(
+        "Modificado por Jonatah Nery",
+        style: TextStyle(
+            fontStyle: FontStyle.italic,
+            fontSize: 15),
+            textAlign: TextAlign.center,
       ),
       );
   }
